@@ -45,12 +45,10 @@ function getDetails (itemName) {
  	if(request.readyState == 4){
  		if(request.status == 200){
  			detailDiv = document.getElementById("description");
-			// detailDiv.innerHTML = request.responseText; 
 			var p = document.createElement('p');
 			p.innerHTML = request.responseText;
 			detailDiv.innerHTML = '';
 			detailDiv.appendChild(p);
- 		// console.log(request.responseText);
  		}
  	}
  }

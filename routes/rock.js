@@ -10,6 +10,5 @@ var details = {
 router.get('/', function(req, res, next) {
   var title = req.query.title;
   res.send(details[title]);
-});
-
+})
 module.exports = router;
